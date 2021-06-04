@@ -1,0 +1,120 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    input[type=text], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    input[type=number], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    .button {
+        border: none;
+        color: white;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+
+    .buttonStart {
+        background-color: #04AA6D; /* Green */
+        border-radius: 12px;
+    }
+
+    .buttonStop {
+        background-color: #ea0b0b; /* Red */
+        border-radius: 12px;
+    }
+
+    .buttonReport {
+        background-color: #1D8FE7; /* Blue */
+        border-radius: 12px;
+        border: none;
+        color: white;
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+</style>
+<div ng-controller="EmpCtrl">
+    <div class="container panel panel-default">
+        <div class="row panel-body">
+            <div class="col-sm-3 col-md-8">
+                <input type="checkbox" id="numericCheck" name="nameNumeric">
+                <label for="forNumeric"> Numeric</label><br>
+                <input type="checkbox" id="alphanumericCheck" name="nameAlphanumeric">
+                <label for="forAlphanumeric">Alphanumeric</label><br>
+                <input type="checkbox" id="floatCheck" name="nameFloat">
+                <label for="forFloat">Float</label><br>
+            </div>
+            <div class="col-sm-9 col-md-4">
+                <label>Size of the output file(KB)</label>
+                <br>
+                <input type="number" id="fileSizeId" name="fileSizeName" value="10">
+            </div>
+        </div>
+        <div class="row" style="padding-top:50px;padding-left:30px;padding-bottom:50px">
+            <button type="button" id="Start" class="button buttonStart">Start</button>
+            <button type="button" id="Stop" class="button buttonStop">Stop</button>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                <label>Counter 1(Numeric)</label>
+            </div>
+            <div class="col-md-4">
+                <input type="text" id="randomNum" name="numericName">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                <label>Counter 2(Alphanumeric)</label>
+            </div>
+            <div class="col-md-4">
+                <input type="text" id="alphanumericId" name="alphanumericName">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                <label>Counter 3(Float)</label>
+            </div>
+            <div class="col-md-4">
+                <input type="text" id="floatId" name="floatName">
+            </div>
+        </div>
+        <div class="row" style="padding-top:100px;padding-left:450px;padding-bottom:50px">
+            <button type="button" id="btnIdStart" class="buttonReport" onclick="location.href='@Url.Action("Report", "Home")'">Generate Report</button>
+        </div>
+    </div>
+</div>
+
+ 

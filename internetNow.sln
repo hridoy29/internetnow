@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "internetNow", "internetNow\internetNow.csproj", "{1AFF855F-15A7-43A6-B18A-1CBBEB36B8BC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1AFF855F-15A7-43A6-B18A-1CBBEB36B8BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AFF855F-15A7-43A6-B18A-1CBBEB36B8BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AFF855F-15A7-43A6-B18A-1CBBEB36B8BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AFF855F-15A7-43A6-B18A-1CBBEB36B8BC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6FEFCDE7-C15A-4EEB-861C-E00CD4E45457}
+	EndGlobalSection
+EndGlobal

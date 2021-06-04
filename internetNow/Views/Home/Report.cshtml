@@ -1,0 +1,42 @@
+﻿@model IEnumerable<internetNow.Models.RatioModel>
+@{
+    ViewBag.Title = "Report";
+}
+    
+
+    <div class="container">
+
+        <div>
+            <input type="button" class="btn btn-info" value="Back" onclick="location.href='@Url.Action("Index", "Home")'" />
+        </div>
+        </br>
+        @if (Model != null)
+        {
+            <table class="table table-bordered">
+                <tr>
+                    <th>% Numeric</th>
+                    <th>% Alphanumeric</th>
+                    <th>% Float</th>
+                </tr>
+                @foreach (var item in Model)
+
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.NumaricCountRatioProperty)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.AlphanumaricCountRatioProperty)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.FloatCountRatioProperty)
+                        </td>
+                         
+
+                    </tr>
+                }
+
+
+            </table>
+        }
+    </div>
